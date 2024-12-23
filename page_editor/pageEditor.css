@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+body {
+    background: url(gym\ cover.jpg);
+    background-size: cover; 
+} 
+h1 {
+    color: wheat;
+    text-align: center;
+ }
+#description, .myDetails {
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.editor{
+    position: relative;
+    top: 150px;
+}
+
+.home
+{
+  display: inline-block;
+  color: #03a9f4;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: all .4s ease-in-out; 
+}
+.home :hover{
+  transform: scale(1.1);
+  display: inline-block;
+}
+nav{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0px; 
+  transition: background 1s;
+  position: fixed;
+  z-index: 9999;  
+  top: 0;
+  left: 0;
+  background-color: black;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+} 
+span 
+{
+   color:#03a9f4;
+   font-size: larger;
+}
+span h1 a:link { 
+  text-decoration: none; 
+  color:#03a9f4 ;
+
+}
+nav ul li{
+   display: inline-block;
+   list-style: none;
+   margin: 20px 20px; 
+}
+nav ul li a
+{
+   text-decoration:none;
+   color: #03a9f4;
+   font-weight: 500;
+   position: relative;
+   right: 30%;
+}
+nav ul li .up::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #03a9f4;
+  transition: width 0.3s;
+}
+a img{
+  position:absolute;
+  left: 80px;
+  width: 150px;
+  height: 100px;
+  top: 5px;
+}
+nav ul li a:hover::after
+{
+   width: 50%;
+}
+nav:hover
+{
+   background: white;
+}
+nav:hover ul li a
+{
+   color: #FF0000;
+}
+.col p{
+    color:#03a9f4;
+    position:relative;
+    text-align: center;
+}
+.row2 .socialmedia i
+{
+    display: inline-block;
+    color:white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+.socialmedia a{
+   position:relative;
+   left: 41.25%;
+}
+.row2 .socialmedia i:hover{
+    color: #03a9f4;
+    border-radius: 20px;
+}
+.col{
+  position: relative;
+}
+.socialmedia{
+  position: relative;
+  top: 10px;
+}
+.row2{
+  position: absolute;
+  top: 850px;
+  height:100px;
+  width: 101.1%;
+  background-color: black;
+  margin-left: -8px;
+  border: 2px solid black;
+}
