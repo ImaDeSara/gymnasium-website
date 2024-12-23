@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Student4_Imasha/img_gallery/gallery.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Image Gallery </title> 
+</head> 
+   
+    <body> 
+        <header> 
+            <nav>
+                <div class="logo">
+                  <a href="/Student2_Dasun/main/index.html"><img src="/images/whightlogi.png" alt="logo"></a>
+                  </div>
+                  <ul>
+                    <!-- the following navigation links will only work only when the website is integrated  -->
+                    <li><a class="home" href ="/Student2_Dasun/main/index.html"><i class='fas fa-home' style='font-size:24px'></i></a></li>
+                    <li><a class="home" href="/Student1_Bimsara/buy/buy.html"><i class='fas fa-cart-arrow-down' style='font-size:24px'></i></a></li>
+                    <li><a class="up" href="/Student2_Dasun/comment/comment.html">COMMENTS</a></li>
+                    <li><a class="up" href="/Student3_Sandru/quiz/quiz.html">QUIZ</a></li>
+                    <li><a class="up" href="/Student4_Imasha/img_gallery/img_gallery.html">GALLERY</a></li>
+                    <li><a class="up" href="/Student4_Imasha/sitemap/sitemap.html">SITE MAP</a></li>
+                    <li><a class="up" href="/Student3_Sandru/about_us/student_details.html">ABOUT US</a></li>
+                  </ul>
+              </nav>
+          </header>
+        <div class="container"> 
+            <span id="1" onclick="color(this)" class="color clr1"></span>
+            <span id="2" onclick="color(this)" class="color clr2"></span>
+            <span id="3" onclick="color(this)" class="color clr3"></span>
+            <span id="4" onclick="color(this)" class="color clr4"></span>
+            <div id="5" onclick="changeColor()" class="color clr5">
+                <p style="color: beige; text-align: center; justify-content: center; margin-top: 13px; ">R</p>
+            </div>
+        </div> 
+
+        <div class="gallery">    
+            <div class="img-card active">    
+                <div class="buttons"> 
+                    <button class="btn active" onclick="changeActiveButton(this); changeFontSize(16); document.getElementById('paragraph1').style.fontSize='0.8rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(18); document.getElementById('paragraph1').style.fontSize='1.5rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(20); document.getElementById('paragraph1').style.fontSize='2rem'"> A </button> 
+                </div>  
+                
+                <img src="/Student4_Imasha/imagegallery/fitnessmangirlworkout.jpg" alt="img">  
+                <div class="content">  
+                    <h2> Lifting </h2>  
+                    <p id="paragraph1">Playing a game for 90 minutes requires you to have great endurance combined with the ability to put in short bursts of maximum effort. Try a TABATA-style 20 second sprint combined with 10 second recovery and repeat several times to get the full benefit.</p>
+                </div>                  
+            </div>     
+         
+            <div class="img-card">
+                <div class="buttons"> 
+                    <button class="btn active" onclick="changeActiveButton(this); changeFontSize(16); document.getElementById('paragraph2').style.fontSize='0.8rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(18); document.getElementById('paragraph2').style.fontSize='1.5rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(20); document.getElementById('paragraph2').style.fontSize='2rem'"> A </button> 
+                </div>  
+
+                <img src="/Student4_Imasha/imagegallery/Treadmill.jpg" alt="img"> 
+                <div class="content">
+                    <h2>  Sprints </h2> 
+                    <p id="paragraph2">Playing a game for 90 minutes requires you to have great endurance combined with the ability to put in short bursts of maximum effort. Try a TABATA-style 20 second sprint combined with 10 second recovery and repeat several times to get the full benefit.</p>
+                </div>
+            </div> 
+
+            <div class="img-card">
+                <div class="buttons"> 
+                    <button class="btn active" onclick="changeActiveButton(this); changeFontSize(16); document.getElementById('paragraph3').style.fontSize='0.8rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(18); document.getElementById('paragraph3').style.fontSize='1.5rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(20); document.getElementById('paragraph3').style.fontSize='2rem'"> A </button> 
+                </div>  
+
+                <img src="/Student4_Imasha/imagegallery/benchpress.jpg" alt="img">
+                <div class="content">
+                    <h2> Bench Press </h2>
+                    <p id="paragraph3">
+                        Hold the weight directly over the shoulders, arms slightly wider than shoulder height. Push the weight up until your arms are angled at 45 degrees at the top. Slowly lower the weight back down to chest height, elbows out to the sides. Repeat the press and perform around 5 reps or more.
+                    </p>
+                </div>
+            </div> 
+
+            <div class="img-card">
+                <div class="buttons"> 
+                    <button class="btn active" onclick="changeActiveButton(this); changeFontSize(16); document.getElementById('paragraph4').style.fontSize='0.8rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(18); document.getElementById('paragraph4').style.fontSize='1.5rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(20); document.getElementById('paragraph4').style.fontSize='2rem'"> A </button> 
+                </div>  
+
+                <img src="/Student4_Imasha/imagegallery/dumbbell.jpg" alt="img">
+                <div class="content">
+                    <h2> Dumbbells </h2>
+                    <p id="paragraph4">
+                        If you have not previously done weight training, you will need to select a set of dumbbells that will meet your needs at the beginner level.
+                        Your upper body consists of your arms, shoulders, upper back and chest. For your biceps, the classic dumbbell move is the bicep curl. Tricep extensions are a good dumbbell exercise that you can do to work out your triceps.
+                    </p>
+                </div> 
+            </div> 
+
+            <div class="img-card">
+                <div class="buttons"> 
+                    <button class="btn active" onclick="changeActiveButton(this); changeFontSize(16); document.getElementById('paragraph5').style.fontSize='0.8rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(18); document.getElementById('paragraph5').style.fontSize='1.5rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(20); document.getElementById('paragraph5').style.fontSize='2rem'"> A </button> 
+                </div>  
+
+                <img src="/Student4_Imasha/imagegallery/squats.jpg" alt="img">
+                <div class="content">
+                    <h2> Squats </h2>     
+                    <p id="paragraph5">
+                        To achieve the best results, use a heavy weight, with fewer reps to increase strength and muscle mass, or use lighter weights (or simply your body weight) with explosive plyometric movements to develop your power and speed.
+                    </p>
+                </div>
+            </div> 
+
+            <div class="img-card">
+                <div class="buttons"> 
+                    <button class="btn active" onclick="changeActiveButton(this); changeFontSize(16); document.getElementById('paragraph6').style.fontSize='0.8rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(18); document.getElementById('paragraph6').style.fontSize='1.5rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(20); document.getElementById('paragraph6').style.fontSize='2rem'"> A </button> 
+                </div>  
+
+                <img src="/Student4_Imasha/imagegallery/dips.jpg" alt="img"> 
+                <div class="content">
+                    <h2> Pushups </h2>
+                    <p id="paragraph6">
+                        Get down on all fours, placing your hands slightly wider than your shoulders. Straighten your arms and legs. 
+                        Lower your body until your chest nearly touches the floor. Pause, then push yourself back up. Repeat the above procedure.  
+                    </p>   
+                </div>
+            </div> 
+
+            <div class="img-card">
+                <div class="buttons"> 
+                    <button class="btn active" onclick="changeActiveButton(this); changeFontSize(16); document.getElementById('paragraph7').style.fontSize='0.8rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(18); document.getElementById('paragraph7').style.fontSize='1.5rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(20); document.getElementById('paragraph7').style.fontSize='2rem'"> A </button> 
+                </div> 
+
+                <img src="/Student4_Imasha/imagegallery/foamroller.jpg" alt="img">
+                <div class="content">
+                    <h2> Foam roller </h2>
+                    <p id="paragraph7">  
+                        Using a foam roller both before and after exercise helps massage away knots and tightness in your muscles, which in turn helps prevent injuries and de-stresses the body.  
+                        It also increases flexibility, all aiding in the much-needed recovery and maintenance process.
+                    </p>
+                </div> 
+            </div> 
+
+            <div class="img-card">
+                <div class="buttons"> 
+                    <button class="btn active" onclick="changeActiveButton(this); changeFontSize(16); document.getElementById('paragraph8').style.fontSize='0.8rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(18); document.getElementById('paragraph8').style.fontSize='1.5rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(20); document.getElementById('paragraph8').style.fontSize='2rem'"> A </button> 
+                </div> 
+
+                <img src="/Student4_Imasha/imagegallery/planks.jpg" alt="img"> 
+                <div class="content">
+                    <h2> Plank </h2> 
+                    <p id="paragraph8">
+                        This is a fantastic exercise for your core that can be done in loads of different ways, depending on what you want to achieve. 
+                        You can also perform a plank at both high and low intensity levels.
+                    </p>   
+                </div>
+            </div> 
+
+            <div class="img-card">
+                <div class="buttons"> 
+                    <button class="btn active" onclick="changeActiveButton(this); changeFontSize(16); document.getElementById('paragraph9').style.fontSize='0.8rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(18); document.getElementById('paragraph9').style.fontSize='1.5rem'"> A </button>
+                    <button class="btn" onclick="changeActiveButton(this); changeFontSize(20); document.getElementById('paragraph9').style.fontSize='2rem'"> A </button> 
+                </div> 
+
+                <img src="/Student4_Imasha/imagegallery/battleropes.jpg" alt="img">
+                <div class="content">
+                    <h2> Battle ropes </h2>
+                    <p id="paragraph9">
+                        Most ropes are 30 to 50 feet long and between one and two inches thick. But they're all used in the same basic manner: You'll swing, slam, and shake the ropes to ramp up your heart rate, challenge your muscles, and burn fat.
+                    </p>
+                </div>
+            </div> 
+        </div>
+        <div class="row2">
+            <div class="col">
+                <p>2023 VIKING | FITNESS.<a href="/page_editor/pageEditor.html">  Developed by Imasha De Saram </a></p>
+            </div>
+            <div class="socialmedia">
+              <a href=""><i class="fab fa-youtube"></i></a>
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-tiktok"></i></a>
+              <a href=""><i class="fab fa-snapchat"></i></a>
+            </div>
+          </div>
+
+         <script src="card.js"> </script>
+    </body>
+</html>

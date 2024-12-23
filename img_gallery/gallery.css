@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.35s linear;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}        
+   
+body {  
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black; 
+    font-family: "poppins", sans-serif;
+    justify-content: flex-start;
+    color: #fff;
+} 
+
+.container {
+  position:absolute;
+  top:130px; 
+  right:50px;
+}
+
+.color {
+  border-radius: 25px;
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+  margin: 0 1px;
+  cursor: pointer;
+  border: 2px solid #FFF; 
+}
+
+.clr1 {
+  background-color: rgb(119, 7, 55);
+}
+
+.clr2 {
+  background-color: rgb(210, 4, 45);
+}
+
+.clr3 {
+  background-color: rgb(167, 71, 3);
+}
+
+.clr4 {
+  background-color: rgb(100, 1, 26);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 171px;
+} 
+
+.img-card{
+    width: 4rem;
+    height: 480px;
+    margin: 0.5rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    position: relative;
+    top: -50px;
+    cursor: pointer;
+    background-color: #24242436; 
+    transition: all 0.75s ease-in-out;
+    backdrop-filter: blur(8px) brightness(85%);
+    line-height: 30px; 
+    text-align:justify;
+}
+
+.img-card.active {
+    width: 50vw; 
+}
+
+.img-card:not(.active):hover {
+    transform: scale(1.05);
+    box-shadow: 0 24px 32px -12px #10101024; 
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-card .content{
+    padding: 1.25rem;
+    border: 1px solid #fff3;
+    border-radius: 2rem;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    color: white; 
+    backdrop-filter: blur(8px) brightness(85%);
+    -webkit-backdrop-filter: blur(8px) brightness(85%);  
+    font-size: 1.25rem; 
+    font-weight: 550;
+    word-break:break-all;
+    text-transform: uppercase;
+}
+
+.content {
+  position:absolute;
+  bottom: 0;
+  right:0;
+}
+
+.img-card.active h2{
+  visibility: hidden;
+}
+.img-card.active p  { 
+    bottom: 1rem;  
+    left: 1rem; 
+    right: 1rem; 
+    border-radius: 16px;  
+    display: block;   
+}   
+
+.img-card p{
+  display: none;
+  backdrop-filter: blur(10px) brightness(85%);
+  -webkit-backdrop-filter: blur(20px) brightness(85%);  
+}
+
+.gallery .buttons {
+  flex-direction: row;
+  position: absolute; 
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+  visibility: hidden; 
+} 
+
+.gallery .img-card.active .buttons {
+  visibility: visible;
+}
+
+.gallery .buttons .btn {
+  padding: 0 14px;
+  display: flex;
+  color: #fff;
+  background-color: #515151;;
+  margin-left: 10px; 
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #515151; 
+} 
+
+/* changes the button background color to blue when clicked */
+.gallery .buttons .btn.active {
+  background-color: #04a9f5;
+}   
+/* increase font size in the buttons  */
+.gallery .buttons .btn:nth-child(2) {
+  font-size: 1.5em; 
+}
+.gallery .buttons .btn:nth-child(3) {
+  font-size: 2em; 
+}  
+
+ nav{
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0px; 
+  transition: background 1s;
+  position: fixed;
+  z-index: 9999;  
+  top: 0;
+  left: 0;
+  background-color: black;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);   
+} 
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px 20px;
+}
+nav ul li a
+{
+  text-decoration:none;
+  color: #03a9f4;
+  font-weight: 500;
+  position: relative;
+  right: 30%;
+}
+nav ul li .up::after{
+ content: '';
+ width: 0;
+ height: 3px;
+ position: absolute;
+ bottom: -5px;
+ left: 50%;
+ transform: translateX(-50%);
+ background: #03a9f4;
+ transition: width 0.3s;
+}
+a img{
+  position:absolute;
+  left: 80px;
+  width: 150px;
+  height: 100px;
+  top: 5px;
+}
+nav ul li a:hover::after
+{
+ width: 50%;
+}
+
+nav:hover
+{
+ background: white;
+}
+nav:hover ul li a
+{
+ color: #FF0000;
+}
+.col p{
+  color:#03a9f4;
+  position:relative;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+.row2 .socialmedia i
+{
+  display: inline-block;
+  color:white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+.socialmedia a{
+  position:relative;
+  left: 41.25%;
+}
+.row2 .socialmedia i:hover {
+  color: #03a9f4;
+  border-radius: 20px;
+}
+.col{
+  position: relative;
+}
+.socialmedia {
+  position: relative;
+  top: 30px;
+}
+.row2 {
+  position: absolute;
+  top: 850px;
+  height:100px;
+  width: 101.1%;
+  background-color: black;
+  margin-left: -8px;
+  border: 2px solid black;
+}
+.home
+{
+  display: inline-block;
+  color: #03a9f4;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: all .4s ease-in-out;
+}
+.home :hover{
+  transform: scale(1.1);
+  display: inline-block;
+}
