@@ -1,7 +1,7 @@
 # Overview
 This project is part of the Web Design and Development coursework (2022/23). Our group has developed a dynamic, interactive website for a gymnasium, featuring multiple pages with consistent styling, user interactivity, and responsive design.
 
-## My Contributions
+## My Contribution
 ### 1. Site Map (SVG Diagram)
 - Created an interactive SVG sitemap with clickable links to all main pages.
 - Styled to match the gym theme using inline SVG and CSS.
