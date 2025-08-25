@@ -1,5 +1,5 @@
 # Project Overview
-This project is part of the Web Design and Development coursework (2022/23). Our group has developed a dynamic, interactive website for a gymnasium, featuring multiple pages with consistent styling, user interactivity, and responsive design.
+Our group has developed a dynamic, interactive website for a gymnasium, featuring multiple pages with consistent styling, user interactivity, and responsive design.
 
 # My Contributions
 ## 1. Site Map (SVG Diagram)
